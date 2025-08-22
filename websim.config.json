@@ -1,0 +1,47 @@
+{
+  "database": {
+    "schema": {
+      "videos": {
+        "id": {
+          "type": "uuid",
+          "description": "Unique identifier for the video"
+        },
+        "title": {
+          "type": "text",
+          "description": "Title of the video"
+        },
+        "description": {
+          "type": "text",
+          "description": "Description of the video"
+        },
+        "thumbnail_url": {
+          "type": "text",
+          "description": "URL of the video thumbnail image"
+        },
+        "video_url": {
+          "type": "text",
+          "description": "URL of the video content file"
+        }
+      },
+      "sfx_assets": {
+        "id": {
+          "type": "uuid",
+          "description": "Unique identifier for the SFX asset"
+        },
+        "video_concept_id": {
+          "type": "uuid",
+          "description": "ID of the video concept this SFX belongs to"
+        },
+        "sfx_url": {
+          "type": "text",
+          "description": "URL of the SFX audio file"
+        },
+        "sfx_name": {
+          "type": "text",
+          "description": "Original name of the SFX file"
+        }
+      }
+    }
+  }
+}
+
